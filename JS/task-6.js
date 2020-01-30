@@ -1,15 +1,17 @@
 const input = document.querySelector('#validation-input')
 
-function validation (){
-  if(input.value.length >= Number(input.dataset.length)){
+function validation() {
+  if (input.value.length === Number(input.dataset.length)) {
     input.classList.add('valid')
     input.classList.remove('invalid')
-  }else if(input.value.length < Number(input.dataset.length) && input.value.length >= 1){
-    input.classList.add('invalid')
-    input.classList.remove('valid')
-  }else{
-    input.classList.remove('invalid')    
+    return
   }
-  
+  input.classList.add('invalid')
+  input.classList.remove('valid')
+  return 
 }
+
 input.addEventListener('blur', validation)
+
+console.log(input.value.length);
+console.log(input.dataset.text);
