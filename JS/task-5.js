@@ -1,11 +1,10 @@
-const input = document.querySelector('#name-input')
-const span = document.querySelector('#name-output')
+const input = document.querySelector('#name-input');
+const span = document.querySelector('#name-output');
 
 const spanDefault = span.textContent;
 
 function addInputInSpan() {
-  input.value === '' ? (span.textContent = spanDefault) : span.textContent = input.value
-}
+  span.textContent = input.value === "" ? spanDefault : input.value
+};
 
-
-input.addEventListener('input', addInputInSpan)
+input.addEventListener('change', addInputInSpan);

@@ -15,7 +15,7 @@ function createLi(text){
   li.classList.add('item')
   li.textContent = text
   return li
-}
+};
 
-const items = ingredients.map(el => createLi(el))
-list.append(...items)
+const items = ingredients.map(el => createLi(el));
+list.append(...items);

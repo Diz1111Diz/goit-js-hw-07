@@ -1,17 +1,14 @@
-const btnIncrement = document.querySelector('[data-action="increment"]')
-const btnDecrement = document.querySelector('[data-action="decrement"]')
-const span = document.querySelector('#value')
-
-let total = 0
+const btnIncrement = document.querySelector('[data-action="increment"]');
+const btnDecrement = document.querySelector('[data-action="decrement"]');
+const counterValue = document.querySelector('#value');
 
 function plus() {
-  total += 1
-  span.textContent = total
-}
+  counterValue.textContent ++  
+};
 
 function minus() {
-  total -= 1
-  span.textContent = total
-}
-btnIncrement.addEventListener('click', plus)
-btnDecrement.addEventListener('click', minus)
+  counterValue.textContent --
+};
+
+btnIncrement.addEventListener('click', plus);
+btnDecrement.addEventListener('click', minus);

@@ -20,4 +20,4 @@ const createLiAndImg = ({url, alt}) => {
 
 const createGallery = images.reduce((acc, el) => (acc += createLiAndImg(el)), "");
 
-list.insertAdjacentHTML("beforeend", createGallery)
+list.insertAdjacentHTML("beforeend", createGallery);

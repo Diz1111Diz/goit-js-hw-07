@@ -1,4 +1,4 @@
-const allCategories = document.querySelector('#categories')
+const allCategories = document.querySelector('#categories');
 console.log(`В списке ${allCategories.children.length} категории`);
 
 
@@ -9,4 +9,4 @@ function print (el){
   console.log(`Количество элементов: ${el.querySelector("ul").children.length}`);
 }
 
-categoriesOfItems.forEach(el => print(el))
+categoriesOfItems.forEach(el => print(el));
