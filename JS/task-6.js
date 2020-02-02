@@ -8,7 +8,7 @@ function validation() {
   }
   input.classList.add('invalid');
   input.classList.remove('valid');
-  return 
+  
 };
 
 input.addEventListener('input', validation);
